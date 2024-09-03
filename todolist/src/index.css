@@ -1,0 +1,131 @@
+/* Importing a web font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Base styles for dark mode */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color for contrast */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Main container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Heading style */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Light color for heading */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Form container */
+.create_form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Input field */
+.create_form input {
+  width: 300px;
+  padding: 12px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  outline: none;
+  background-color: #1e1e1e; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  font-size: 1rem;
+}
+
+/* Input field focus outline */
+.create_form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* Blue glow on focus */
+}
+
+/* Button style */
+.create_form button {
+  padding: 12px 20px;
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.create_form button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Button focus outline */
+.create_form button:focus {
+  outline: 3px solid #007bff; /* Blue outline on focus */
+  outline-offset: 2px; /* Offset the outline for better visibility */
+}
+
+/* To-do item container */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  width: 350px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e; /* Dark background for items */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Completed to-do item styling */
+.todo-item.completed {
+  background-color: #3a3a3a; /* Slightly lighter background for completed items */
+}
+
+/* Checkbox styling */
+.todo-item input[type="checkbox"] {
+  margin-right: 12px;
+  cursor: pointer;
+  transform: scale(1.2); /* Slightly larger checkbox for better visibility */
+}
+
+/* Delete button styling */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff5252; /* Red color for delete button */
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Delete button hover effect */
+.delete-btn:hover {
+  color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* To-do item text styling */
+.todo-item span {
+  flex: 1;
+  margin-right: 12px;
+  font-size: 1rem;
+  color: #e0e0e0; /* Light text color */
+}

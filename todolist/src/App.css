@@ -1,0 +1,125 @@
+/* General container styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Heading style */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e0e0e0; /* Light color for dark mode */
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Form container */
+.create_form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Input field */
+.create_form input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #333; /* Darker border for dark mode */
+  border-radius: 8px;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); /* Darker shadow for dark mode */
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1e1e; /* Darker background for dark mode */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Input field focus outline */
+.create_form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* Blue glow on focus */
+}
+
+/* Button style */
+.create_form button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.create_form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Button focus outline */
+.create_form button:focus {
+  outline: 3px solid #007bff; /* Blue outline on focus */
+  outline-offset: 2px; /* Offset the outline for better visibility */
+}
+
+/* To-do item container */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #333; /* Darker border for dark mode */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #2c2c2c; /* Dark background for items */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Darker shadow for dark mode */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-item.completed {
+  background-color: #3a3a3a; /* Slightly lighter background for completed items */
+}
+
+/* Checkbox styling */
+.todo-item input[type="checkbox"] {
+  margin-right: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* Delete button styling */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e57373;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Delete button hover effect */
+.delete-btn:hover {
+  color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* To-do item text styling */
+.todo-item span {
+  flex: 1;
+  margin-right: 15px;
+  font-size: 1rem;
+  color: #e0e0e0; /* Light text color */
+}
